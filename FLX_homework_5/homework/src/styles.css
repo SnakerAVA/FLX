@@ -1,0 +1,313 @@
+body {
+    font-family: roboto;
+}
+
+.post-1 {
+    background: #B71757;
+}
+
+.post-2 {
+    background: #0D7E71;
+}
+
+.post-3 {
+    background: #b1660e;
+}
+
+.post-4 {
+    background: #d12767;
+}
+
+.post-5 {
+    background: #2d95bb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.headerNavbar a {
+    padding: 2vw;
+}
+
+.header a:hover {
+    color: #b8b8b8;
+    background-color: #163e4d;
+}
+
+.header a span {
+    color: rgb(104, 24, 24);
+}
+
+.headerNavbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 40vw;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.headerNavbar li {
+    list-style: none;
+}
+
+h1 {
+    display: block;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.header,
+footer {
+    background-color: #162b4d;
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    padding: 2vh;
+}
+
+body {
+    font-family: roboto;
+    font-weight: 100;
+    background-color: #0b192f;
+}
+
+h2 {
+    display: block;
+    font-size: 3.2em;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+p {
+    font-size: 1.08em;
+}
+
+.wrapper {
+    width: 84%;
+    margin: auto;
+}
+
+.toggle {
+    display: none;
+}
+
+.content {
+    width: 75%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+main,
+.contentPost,
+.contentDescription {
+    display: flex;
+}
+
+.contentPost:nth-child(even),
+.contentPost:nth-child(even),
+.contentDescription {
+    flex-direction: row-reverse;
+}
+
+.contentPost:last-child,
+.contentDescription {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contentPost img {
+    height: 50%;
+    width: 50%;
+}
+
+.contentPost img:hover,
+.contentDescription:hover {
+    cursor: pointer;
+    filter: opacity(.5);
+    transition-delay: .2s;
+}
+
+.descriptionText {
+    padding: 10%;
+    color: #fff;
+    width: 85%;
+}
+
+.descriptionText p {
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.descriptionTextLeft p {
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.descriptionText h2 {
+    padding-bottom: 1.5vw;
+}
+
+.descriptionTextLeft {
+    padding: 10%;
+    color: #fff;
+    width: 85%;
+    text-align: right;
+}
+
+.descriptionTextDown h2 {
+    padding-bottom: 1.5vw;
+}
+
+.descriptionTextDown {
+    padding: 5%;
+    color: #fff;
+    width: 85%;
+    font-weight: 300;
+}
+
+.descriptionTextLeft h2 {
+    padding-bottom: 1.5vw;
+    text-align: right;
+}
+
+.descriptionDate {
+    padding: 2vh;
+    font-size: 2vw;
+    text-transform: lowercase;
+    color: rgba(253, 253, 253, 0.479);
+}
+
+.descriptionDay {
+    font-size: 3vw;
+}
+
+.aside-content {
+    width: 23%;
+    margin: 2% 0 0 2%;
+    background-color: #fff;
+    height: 100%;
+}
+
+.aside-content img {
+    width: 100%;
+}
+
+.aside-contentDescription {
+    padding: 12%;
+}
+
+.aside-contentDescription h2 {
+    font-size: 1.8em;
+    padding-bottom: 5%;
+    font-weight: 300;
+}
+
+.aside-contentDescription p {
+    color: rgba(151, 151, 151, 0.795);
+    line-height: 1.4em;
+    font-weight: 300;
+}
+
+footer {
+    margin-top: 2%;
+    color: rgba(151, 151, 151, 0.795);
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1064px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .headerNavbar {
+        display: none;
+    }
+    .header {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        height: 15vh;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .toggle {
+        display: block;
+        color: #fff
+    }
+    .wrapper {
+        width: 95%;
+    }
+    .content {
+        width: 65%;
+    }
+    .aside-content {
+        width: 33%;
+    }
+    .contentPost,
+    .contentPost:nth-child(even) {
+        flex-direction: column;
+    }
+    .contentPost img {
+        width: 100%;
+    }
+    .contentPost:nth-child(even),
+    .contentDescription,
+    .contentPost:last-child,
+    .contentDescription,
+    .contentDescription {
+        flex-direction: column;
+        align-items: center;
+    }
+    .descriptionDay {
+        font-size: 2em;
+    }
+    footer {
+        height: 15vh;
+        flex-direction: column;
+        font-size: .7em;
+        justify-content: center;
+        align-content: center;
+    }
+    footer p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    h2,
+    .aside-content h2 {
+        font-size: 2.5em;
+    }
+    .content,
+    .aside-content {
+        width: 100%;
+        margin: 5% auto;
+    }
+    .descriptionDate:last-child {
+        font-size: 1.5em;
+    }
+    footer {
+        font-size: 1.1em;
+    }
+}
